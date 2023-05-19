@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruleta-SC</title>
+    <script src="test.js"></script>
+
+    <style>
+         body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0;
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      float: left;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .apuesta-button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: background-color 0.3s;
+    }
+
+    .apuesta-button:hover {
+      background-color: #45a049;
+    }
+      </style>
+    
+</head>
+<body>
+
+    <body>
+        <div class="container">
+          <h1>Ruleta - Apuestas de Docenas</h1>
+      
+          <div class="docenas">
+            <div>
+              <h2 class="docena-title">Par / Impar</h2>
+              <div class="opcion">
+                <input type="number" id="apuesta-par" placeholder="Valor de la apuesta $0.0">
+                <input type="radio" id="even" name="docena1" value="even">
+                <label class="opcion-label" for="even">Par</label>  
+                <input type="radio" id="odd" name="docena1" value="odd">
+                <label class="opcion-label" for="odd">Impar</label>
+            </div>
+            </div>
+      
+            <div>
+              <h2 class="docena-title">Rojo / Negro</h2>
+              <div class="opcion">
+                <input type="number" id="apuesta-inpar" placeholder="Valor de la apuesta $0.0">
+                <input type="radio" id="red" name="docena2" value="red">
+                <label class="opcion-label" for="red">Rojo</label>  
+                <input type="radio" id="Negro" name="docena2" value="negro">
+                <label class="opcion-label" for="Negro">Negro</label>
+            </div>
+            </div>
+      
+            <div>
+              <h2 class="docena-title">Docenas</h2>
+              <div class="opcion">
+                <input type="number" id="apuesta-inpar" placeholder="Valor de la apuesta $0.0">
+                <input type="checkbox" id="odd" name="docena3" value="odd">
+                <label class="opcion-label" for="odd">1-13</label>
+                <input type="checkbox" id="odd" name="docena3" value="odd">
+                <label class="opcion-label" for="odd">14-26</label>
+                <input type="checkbox" id="odd" name="docena3" value="odd">
+                <label class="opcion-label" for="odd">27-32</label>
+              </div>
+            </div>
+          </div>
+      
+          <button class="apuesta-button" onclick="realizarApuesta()">Realizar Apuesta</button>
+        </div>      
+      
+</body>
+</html>
